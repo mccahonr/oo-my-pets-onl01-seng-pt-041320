@@ -38,6 +38,6 @@ class Owner
   end
 
   def buy_cat(cat_name)
-    @@cats << Cat.new(cat_name, owner, mood)
+    @@cats << Cat.new(cat_name)
   end
 end
