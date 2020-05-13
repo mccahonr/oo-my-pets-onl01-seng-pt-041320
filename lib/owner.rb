@@ -45,4 +45,8 @@ class Owner
   def buy_dog(dog_name)
     @@dogs << Dog.new(dog_name, self)
   end
+
+  def walk_dogs
+    dogs.mood = "happy"
+  end
 end
