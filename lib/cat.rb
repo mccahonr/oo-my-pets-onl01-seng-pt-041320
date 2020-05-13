@@ -10,7 +10,6 @@ class Cat
     @owner = owner
     @mood = mood
     @@all << self
-
   end
 
   def self.all
