@@ -5,6 +5,7 @@ class Owner
 
   @@all = []
   @@cats = []
+  @@dogs = []
 
   def initialize(name, species = "human")
     @name = name
@@ -39,5 +40,9 @@ class Owner
 
   def buy_cat(cat_name)
     @@cats << Cat.new(cat_name, self)
+  end
+
+  def buy_dog(dog_name)
+    @@dogs << Dog.new(dog_name, self)
   end
 end
